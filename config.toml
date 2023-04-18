@@ -1,4 +1,4 @@
-baseURL = "http://welms-site.s3-website-ap-southeast-4.amazonaws.com"
+baseURL = "http://welms-site.s3-website.ap-southeast-4.amazonaws.com/"
 languageCode = "en-us"
 title = "My New Hugo Sit via AWS Cloud9"
 theme = "ananke"

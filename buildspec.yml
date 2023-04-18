@@ -15,10 +15,10 @@ phases:
       - rm -rf /tmp/*
   build:
     commands:
-      - rm -rf public
       - cd site
+      - rm -rf public
       - hugo 
   post_build:
     commands:
-      - aws s3 sync --delete site/public s3://welms-site
+      - aws s3 sync --delete site/public --region ap-southeast-4 s3://welms-site
       - echo Build completed on `date`
